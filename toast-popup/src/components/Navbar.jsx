@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between bg-green-500 items-center p-5 mb-8'>
+    <div className='flex justify-between bg-green-500 items-center p-5'>
       <div>Abhishek</div>
       <div><h2>Toast Popup</h2></div>
       <div><a href="https://www.google.com" target="_blank">Link</a></div>

@@ -21,9 +21,8 @@ const Message = (props) => {
         const find = arr.filter((e) => { return e.id != id })
         setArr([...find])
     }
-console.log(props.hor)
     return (<>
-        <button onClick={handleClick}>show toast</button>
+        {props.message!="" ? <button className='border-2 border-black px-2 rounded-md' onClick={handleClick}>show toast</button>: <button disabled className=' bg- bg-gray-400 border-2 border-black px-2 rounded-md' onClick={handleClick}>show toast</button>}
         <div className={`${((props.hor)=="left" && (props.ver == "top")) ? "absolute top-3 left-3 " : "hidden"} z-10 h-auto w-auto`}>
             {arr.map((e) => {
             return (

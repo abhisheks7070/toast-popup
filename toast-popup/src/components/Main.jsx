@@ -16,7 +16,7 @@ const Main = () => {
     console.log(status)
     return (
 
-        <div className='flex flex-col text-center items-center gap-4 relative h-[90vh]'>
+        <div className='flex flex-col text-center items-center gap-4 relative h-[90vh] mt-8'>
 
             <select className='w-32 border-2 border-black rounded-md px-2' value={hor} onChange={(event)=>{setHor(event.target.value)}}>
                 <option value="left" >Left</option>
